@@ -1,3 +1,5 @@
 # node-sqlite
 
-##Using SQL with Node.js
+##In class exercise using SQL with Node.js
+
+

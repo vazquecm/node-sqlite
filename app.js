@@ -14,7 +14,10 @@ const db = new sqlite3.Database('./db/chinook.sqlite');
 
 // How many Invoices were there in 2009 and 2011? What are the respective total sales for each of those years?
 //req.query = { filter: { year: '2009,2011' } }
+
 // in browser put this --http://localhost:3000/sales-per-year?filter[year]=2009,2011
+
+/// sqlite is used a lot for mobile apps because only the database is needed.
 app.get('/sales-per-year', (req, res) => {
 
 const filterYears = req.query.filter.year.split(',').map(y => +y);
